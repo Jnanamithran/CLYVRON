@@ -31,7 +31,10 @@ nav{
     top: -100px;
     width: 100%;
     transition: top 0.3s ease;
+    background-color: #1f2326;
+    
 }
+
 nav ul li {
     display: inline;
     list-style: none;
@@ -117,6 +120,7 @@ nav ul li img {
 .explore p {
     color: #658f9f;
 }
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     background-color: transparent;
@@ -167,13 +171,15 @@ nav ul li img {
     transition: transform 0.3s ease-in-out;
 }
 
-.category img {
+.category-list img {
     width: 120px;
     height: 120px;
     border-radius: 10px;
 }
-
-.category p {
+.category-list a {
+    text-decoration: none;
+}
+.category-list a p {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
@@ -211,7 +217,10 @@ nav ul li img {
     width: 150px;
     transition: transform 0.3s ease-in-out;
 }
-
+.product  {
+    text-decoration: none;
+    color: #658f9f;
+}
 .product img {
     width: 100%;
     border-radius: 10px;
