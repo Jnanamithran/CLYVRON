@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="beauty.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <ul>
-            <li><img src="/Cartopia/images/logo.png" alt="Cartopia Logo"></li>
-            <li><a href="/Cartopia/index.html">Home</a></li>
-            <li><a href="">Shop</a></li>
+<!-- Navbar -->
+    <nav>
+        <button class="menu-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h2 class="nav-head">CARTOPIA</h2>
+        <ul id="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Shop</a></li>
             <li><a href="#">Deals</a></li>
-            <li><a href="/Cartopia/about/about.html">About</a></li>
-            <li><a href="/Cartopia/contact/contact.html">Contact</a></li>
+            <li><a href="./about/about.html">About</a></li>
+            <li><a href="./contact/contact.html">Contact</a></li>
         </ul>
     </nav>
-    <h1>Beauty</h1>
     <div class="container">
         <div class="product">
             <img src="https://via.placeholder.com/250" alt="Face Wash">
@@ -51,5 +55,6 @@
             <a href="#" class="buy-btn">Buy Now</a>
         </div>
     </div>
+    <script src="/Cartopia/index.js"></script>
 </body>
 </html>

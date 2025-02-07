@@ -1,8 +1,8 @@
-// Typed.js configuration
-var typed = new Typed(".loading-text", {
-    strings: ["Loading.", "Loading..", "Loading...", "Loading...."],
-    typeSpeed: 125,
-    showCursor: false
+// Hide the loader after a delay
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.querySelector(".loader-wrapper").style.display = "none";
+    }, 3000); // Adjust time if needed
 });
 
 // Remove the loading screen after 5 seconds
@@ -23,6 +23,10 @@ window.onscroll = function() {
     }
 
 };
+function toggleMenu() {
+    document.getElementById('menu').classList.toggle('show');
+    document.querySelector('.menu-btn').classList.toggle('active');
+}
 // Set the sale end date (YYYY, MM (0-based), DD, HH, MM, SS)
 const saleEndDate = new Date(2025, 1, 15, 23, 59, 59).getTime(); // Example: Feb 15, 2025, 11:59:59 PM
 

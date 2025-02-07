@@ -12,11 +12,16 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar">
-        <ul>
-            <li><img src="./images/logo.png" alt="Cartopia Logo"></li>
+    <nav>
+        <button class="menu-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h2 class="nav-head">CARTOPIA</h2>
+        <ul id="menu">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="">Shop</a></li>
+            <li><a href="#">Shop</a></li>
             <li><a href="#">Deals</a></li>
             <li><a href="./about/about.html">About</a></li>
             <li><a href="./contact/contact.html">Contact</a></li>
@@ -74,9 +79,9 @@
             </a>
         </div>
     </section>    
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-        <span class="loading-text">Loading...</span>
+    <div class="loader-wrapper">
+        <div class="loader-text">CARTOPIA</div> <!-- CARTOPIA Text -->
+        <span class="loader"></span>
     </div>
     <!-- Limited Time Offer -->
     <section class="countdown">

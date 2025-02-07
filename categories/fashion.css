@@ -2,62 +2,122 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #0C0C0C;
     padding-top: 80px; /* Adjust according to the height of your navbar */
 }
 
+.nav-head{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    background-color: #0C0C0C;
+}
 nav {
     text-align: right;
-    padding-right: 20px;
     position: fixed;
+    top: 0;
     width: 100%;
-    top: 0; /* Ensures navbar stays at the top */
-    z-index: 10;/*  Optional: keeps navbar above other content */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #0C0C0C;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    margin-top: -20px;
+    left: -250px; /* Move it to the left */
+    width: 200px;
+    height: 100vh;
+    text-align: center;
+    padding: 20px 0;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    background-color: rgba(134,133,239,0.5);
+}
+
+nav ul.show {
+    left: 0; /* Show the menu from the left */
 }
 
 nav ul li {
-    display: inline;
-    list-style: none;
+    padding: 10px;
 }
 
 nav ul li a {
-    background-color: transparent;
     text-decoration: none;
-    color: #658f9f;
-    padding: 10px;
+    color: white;
     font-size: 20px;
-    padding-right: 30px;
+    padding: 10px;
+    display: block;
 }
 
 nav ul li a:hover {
-    text-shadow: 0 0 20px #658f9f;
+    text-shadow: 0 0 20px #2f195f;
+}
+nav ul li:first-child {
+    margin-top: 60px; /* Adjust the value as needed */
 }
 
-nav ul li img {
-    width: 70px;
-    height: auto; /* Maintains aspect ratio */
-    float: left;
-    border-radius: 50%;
-    margin-top: -10px;
+.menu-btn {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    left: 5px; /* Move it to the left */
+    top: 15px;
+    padding: 0;
+    z-index: 1100;
+    margin-left: 20px;
+    position: fixed;
 }
-h1{
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+
+.menu-btn span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: white;
+    transition: all 0.3s ease;
 }
+
+.menu-btn.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
 /* Container for the products */
 .container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    height: 100%;
+    margin-top: 100px;
 }
 
 /* Styling for each product */
 .product {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 250px;
     text-align: center;
