@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    padding-top: 80px; /* Adjust according to the height of your navbar */
+}
+
+nav {
+    text-align: right;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Ensures navbar stays at the top */
+    z-index: 10;/*  Optional: keeps navbar above other content */
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+}
+
+nav ul li a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #658f9f;
+    padding: 10px;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 20px #658f9f;
+}
+
+nav ul li img {
+    width: 70px;
+    height: auto; /* Maintains aspect ratio */
+    float: left;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Container for the products */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Styling for each product */
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Product Title and Price Styling */
+.product h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.old-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+/* Styling for the Buy Now button */
+.buy-btn {
+    background-color: #658f9f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: green;
+}

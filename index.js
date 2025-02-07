@@ -8,7 +8,7 @@ var typed = new Typed(".loading-text", {
 // Remove the loading screen after 5 seconds
 setTimeout(() => {
     document.getElementById("loading-screen").style.display = "none";
-}, 3000);
+}, 2000);
 
 window.onscroll = function() {
 
